@@ -61,7 +61,7 @@ color: #2c384a;
     padding: 0px 16px;
     margin: 58px 14px 0px 14px; 
 }
-.fon{
+.fon1{
     color: #fcfdfd;
     
 }
@@ -72,7 +72,7 @@ color: #2c384a;
     height: 200px;
     padding: 0%;
     box-sizing: border-box;  
-    margin: 60px 860px 22px 860px;
+    margin: 60px 0px 22px 860px;
 }
 .opisanie1 h3{
     margin-top: 108px;
@@ -88,27 +88,217 @@ color: #2c384a;
 .opisanie1>p{
     text-align: justify;
     margin-left: 598px;
+    margin-right: 598px;
     font-size: 16px;
     color: #3f495a;
 }
 .otstup{
-    margin-top: 42px;
+    margin-top: 42px;;
 }
-.opisanie1 input{
+.opisanie1>input{
     margin-top: 36px;
       height: 40px;
     text-align: center;
     border: 2px solid #6f707e;
-    background: none;
     border-radius: 5px;
+    background-color: #fff;
+    background: url(../img/znachok_ska4atb.jpg) 12px no-repeat;
+    background-size: 18px;
     color: #6f707e;
     font-size: 16px;
     padding: 10px 10px 10px 34px;
     margin-left: 890px;
 }
-.znak{
+.fon2{
+    width: 100%;
+    height: calc(100% - 266px);
+    background: url(../img/fon1.jpg) center no-repeat;
+    background-size: 100%;
+}
+.opisanie2>h3{
+    text-align: center;
+    padding-top: 204px;
+      color: #263244;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.vse{
+
+}
+.nout{
+    float: left;
+}
+.nout>h4{
+    padding-top: 36px;
+    color: #cf7600;
+    font-weight: bold;
+    padding-left: 424px;
+}
+.nout>p{
+    text-align: center;
+    padding-left: 380px;
+    padding-top: 18px;
+    color: #3f495a;
+}
+.nout>img{
+    padding-left: 440px;
+    padding-top: 112px;
+}
+.levopravo{
+    float: left;
+}
+.levopravo>h4{
+    padding-top: 36px;
+    color: #cf7600;
+    font-weight: bold;
+    padding-left: 200px;
+}
+.levopravo>p{
+     text-align: center;
+    padding-left: 150px;
+    padding-top: 18px;
+    padding-right: 75px;
+    color: #3f495a;
+}
+.levopravo>img{
+    padding-left: 213px;
+    padding-top: 107px;
+}
+.raketa{
+    float: left;
+  
+}
+.raketa>h4{
+    padding-top: 36px;
+    color: #cf7600;
+    font-weight: bold;
+    padding-left: 100px;
+}
+.raketa>p{
+      text-align: center;
+    padding-left: 75px;
+    padding-top: 18px;
+    padding-right:75px;
+    color: #3f495a;
+}
+.raketa>img{
+    padding-left: 146px;
+    padding-top: 100px;
+}
+.megafon{
+    float: left;
+}
+.megafon>h4{ 
+    padding-top: 36px;
+    color: #cf7600;
+    font-weight: bold;
+    padding-left: 120px;
+    margin-right: 424px;
+}
+.megafon>p{
+    color: #3f495a;
+   text-align: center;
+    padding-left: 75px;
+    padding-top: 18px;
+    margin-right: 380px;
+   margin-bottom: 92px;
+}
+.megafon>img{
+      padding-left: 135px;
+    padding-top: 100px;
+    margin-right: 440px;
+   
+}
+
+.fon3{
+    float: left;
+    color: /*#fcfdfd;*/
+}
+.zagolovok>h3{
+    text-align: center;
+    padding-top: 404px;
+      color: #263244;
+    font-size: 22px;
+    font-weight: bold;
+    margin: -300px 500px 0px 500px;
+}
+.podzagolovok{
+    color: #3f495a;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 37px;
+    margin-bottom: 39px;
     
 }
+.slider{
+    float: left;
+    height: 596px;
+    width: 1171px;
+    box-shadow: 0px 0px 0px;
+    margin-left: 389px;
+    background: url(../img/slider.jpg) center/cover  no-repeat;
+}
+.podval_slidera{
+    float: left;
+    height: 232px;
+    width: 1171px;
+    margin-left: 389px;
+}
+.podval_slidera>h3{
+    font-size: 18px;
+    color: #384354;
+    font-weight: bold;
+    padding-left: 284px;
+    margin-top: -100px;
+}
+.podval_slidera>p{
+    font-size: 16px;
+    color: #3f495a;
+    text-align: justify;
+    padding-left: 284px;
+    
+}
+.podval_slidera>h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: #384354;
+    padding-top: 38px;
+}
+.company{
+    color: #384354;
+}
+.ssbIlka{
+    color: #384354;
+    margin-right: 900px;
+}
+.opisanie3 input{
+    height: 42px;
+    width: 202px;
+    font-weight: bold;
+    text-align: center;
+    border: 0px solid #63b5ae;
+    background: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    padding: 0px 16px;
+    margin: 70px 900px 0px 0px; 
+    background-color: #63b5ae;
+}
+
+
+.caclstoim{
+    float: left;
+    text-align: center;
+    padding-top: 201px;
+    color: #263244;
+    font-size: 22px;
+    font-weight: bold;
+}
+.kolonki{
+    float: left;
+    text-align: center;    
 
 
 
