@@ -366,6 +366,7 @@ color: #2c384a;
 }
 .srok{
     float: left;
+    
 }
 .fon4{
     float: left;
@@ -575,7 +576,7 @@ color: #2c384a;
     border: 0px solid none;
     background-color: #d3d6dc;
     font-size: 16px;
-    padding: 0px 0px 0px 12px;
+    padding: 10px 0px 0px 12px;
     margin: 15px 0px 0px 593px;  
     
 }
