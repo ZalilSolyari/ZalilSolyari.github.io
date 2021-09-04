@@ -292,7 +292,7 @@ color: #2c384a;
     float: left;
     text-align: center;
     padding-top: 100px;
-    padding-left: 860px;
+    padding-left: 825px;
     color: #263244;
     font-size: 30px;
     font-weight: bold;
@@ -300,28 +300,26 @@ color: #2c384a;
     
 }
 .kolonki{
-    margin-top: 200px;
+    margin-top: 30px;
     float: left;
-    text-align: center; 
-    margin-left: -500px;
 }
 .tip>h4{
      float: left;
     text-align: center;
-    
+    padding-top: 54px;
     color: #263244;
     font-size: 22px;
     font-weight: bold;
+    margin-left: 510px;
 }
-.spisok1{
+.spisok1>select{
         height: 56px;
     width: 890px;
-    text-align: center;
     border: 0px solid #6d7682;
     background-color: #eeeeee;
     font-size: 16px;
     padding: 0px 16px;
-    margin: 58px 14px 0px 14px;
+    margin: 24px 14px 0px 510px;
 }
    
 .des>h4{
@@ -331,8 +329,9 @@ color: #2c384a;
     color: #263244;
     font-size: 22px;
     font-weight: bold;
+    margin-left: 510px;
     }
-.spisok2{
+.spisok2>select{
         height: 56px;
     width: 890px;
     text-align: center;
@@ -340,7 +339,7 @@ color: #2c384a;
     background-color: #eeeeee;
     font-size: 16px;
     padding: 0px 16px;
-    margin: 100px 14px 0px 14px;
+    margin: 24px 14px 0px 510px;
 }
 .adapt>h4{
        float: left;
@@ -349,8 +348,9 @@ color: #2c384a;
     color: #263244;
     font-size: 22px;
     font-weight: bold;
+    margin-left: 510px;
 }
-.spisok3{
+.spisok3>select{
         height: 56px;
     width: 890px;
     text-align: center;
@@ -358,15 +358,25 @@ color: #2c384a;
     background-color: #eeeeee;
     font-size: 16px;
     padding: 0px 16px;
-    margin: 100px 14px 0px 14px;
+    margin: 24px 14px 0px 510px;
 }
 .line2{
-    border-bottom: 4px solid #d1d1d1;
-    margin-top: 336px;
+    border-bottom: 2px solid #d1d1d1;
+    margin-top: 1540px;
+    margin-left: 510px;
+    margin-right: 504px;
 }
 .srok{
     float: left;
-    
+    padding-top: 10px;
+    line-height: 42px;
+    font-weight: bold;
+    margin-left: 510px;
+    font-size: 18px;
+    word-spacing: 776px;
+}
+.zero{
+    word-spacing: 818px;
 }
 .fon4{
     float: left;
