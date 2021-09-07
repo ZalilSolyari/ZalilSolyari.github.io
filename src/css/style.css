@@ -567,7 +567,8 @@ color: #2c384a;
     background-color: #d3d6dc;
     font-size: 16px;
     padding: 0px 0px 0px 12px;
-    margin: 44px 0px 0px 593px;    
+    margin: 44px 0px 0px 593px;
+    opacity: 0.7;
 }
 .mailru>input{
     float: left;
@@ -579,6 +580,7 @@ color: #2c384a;
     font-size: 16px;
     padding: 0px 0px 0px 12px;
     margin: -34px 0px 0px 972px; 
+    opacity: 0.7;
 }
 .blok>textarea{
     height: 95px;
@@ -588,7 +590,8 @@ color: #2c384a;
     background-color: #d3d6dc;
     font-size: 16px;
     padding: 10px 0px 0px 12px;
-    margin: 15px 0px 0px 593px;  
+    margin: 15px 0px 0px 593px; 
+    opacity: 0.7;
     
 }
 .otpravit>input{
