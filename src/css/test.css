@@ -6,13 +6,15 @@ body{
     border: 2px solid red;
     max-width: 800px;
     height: 800px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
 }
 .main_block div{
     line-height: 50px;
     font-weight: bold;
     font-size: 18px;
-    text-align: center;
+    
 }
 .block_1{
     background-color:antiquewhite; 
