@@ -227,9 +227,10 @@ color: #2c384a;
 
 
 .fon1{
-    height: 827px;
+
     width: 100%;
     color: #fcfdfd;
+
 
     
     
@@ -260,6 +261,7 @@ color: #2c384a;
     margin-top: 42px;;
 }
 .opisanie1 input{
+    margin-bottom: 100px;
     margin-top: 36px;
       height: 40px;
     text-align: center;
@@ -286,30 +288,10 @@ color: #2c384a;
 
 .fon2{
     width: 100%;
-    height: 523px;
     background: url(../img/fon1.jpg) center/cover no-repeat;
 
 }
-@media (min-width:768px) and (max-width:992px){
-    .fon2{
-        height: 60%;
-    }
-}
-@media (min-width:576px) and (max-width:767px){
-    .fon2{
-        height: 60%;
-    }
-}
-@media (min-width:367px) and (max-width:575px){
-    .fon2{
-        height: 60%;
-    }
-}
-@media (min-width:307px) and (max-width:366px){
-    .fon2{
-        height: 70%;
-    }
-}
+
 .opisanie2 h3{
     margin-top: 107px;
       color: #263244;
@@ -329,10 +311,12 @@ margin-top: 100px;
     font-weight: bold;
 }
 .nout p{
+        margin-top: 7px;
     color: #3f495a;
+        margin-bottom: 86px;
 }
 .nout img{
-    
+    margin-bottom: 38px;
 }
 .levopravo{
     text-align: center;
@@ -343,9 +327,12 @@ margin-top: 100px;
     font-weight: bold;
 }
 .levopravo p{
+        margin-top: 7px;
     color: #3f495a;
+        margin-bottom: 86px;
 }
 .levopravo img{
+      margin-bottom: 38px;
 }
 .raketa{
     text-align: center;
@@ -357,10 +344,12 @@ margin-top: 100px;
     font-weight: bold;
 }
 .raketa p{
-
+    margin-top: 7px;
     color: #3f495a;
+        margin-bottom: 86px;
 }
 .raketa img{
+      margin-bottom: 38px;
 }
 .megafon{
     text-align: center;
@@ -371,20 +360,483 @@ margin-top: 100px;
     font-weight: bold;
 }
 .megafon p{
+    margin-top: 7px;
     color: #3f495a;
+    margin-bottom: 86px;
 
 
 }
 .megafon img{
-
-   
+      margin-bottom: 38px;
 }
 
+.fon3{
+    width: 100%;
+    float: left;
+    color: /*#fcfdfd;*/
+}
+.zagolovok h3{
+    margin-top: 110px;
+    text-align: center;
+      color: #263244;
+    font-size: 22px;
+    font-weight: bold;
+}
+.podzagolovok{
+    margin-top: 36px;
+    color: #3f495a;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 34px;
+}
+.slider{
+    float: left;
+    box-shadow: 0px 0px 0px;
+    margin-bottom: 42px;
+}
+.podval_slidera{
+    float: left;
+
+}
+.podval_slidera h3{
+    font-size: 18px;
+    color: #384354;
+    font-weight: bold;
+}
+.podval_slidera p{
+    font-size: 16px;
+    color: #3f495a;
+    
+}
+.podval_slidera h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: #384354;
+}
+.company{
+    color: #384354;
+}
+.ssbIlka{
+    color: #384354;
+}
+.opisanie3 input{
+    height: 42px;
+    width: 202px;
+    font-weight: bold;
+    text-align: center;
+    border: 0px solid #63b5ae;
+    background: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    padding: 0px 16px;
+    background-color: #63b5ae;
+}
+.opisanie3 input{
+    transition: all 0.2s;
+}
+.opisanie3 input:hover{
+    background-color:  aqua;
+    color: #2a3c56;
+    transform: scale(1.2);
+}
+.opisanie3 input:active{
+    transform: scale(1.4);
+}
+
+.boxcalc{
+    margin-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0px 0px 10px #ced1d8;
+}
+.caclstoim h3{
+
+    text-align: center;
+    padding-top: 100px;
+    color: #263244;
+    font-size: 30px;
+    font-weight: bold;
+    
+    
+}
+.kolonki{
+    margin-top: 30px;
+
+}
+.tip h4{
+
+    text-align: center;
+    padding-top: 54px;
+    color: #263244;
+    font-size: 22px;
+    font-weight: bold;
+}
+.spisok1 select{
+        height: 56px;
+    width: 100%;
+    text-align: left;
+    border: 0px solid #6d7682;
+    background-color: #eeeeee;
+    font-size: 16px;
+    padding: 0px 16px;
+    margin: 24px 0px 0px 0px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+.spisok2 select:hover{
+   transform: scale(1.025);
+    
+}
+   
+.des h4{
+
+    text-align: center;
+    padding-top: 60px;
+    color: #263244;
+    font-size: 22px;
+    font-weight: bold;
+
+    }
+.spisok2 select{
+        height: 56px;
+    width: 100%;
+    text-align: left;
+    border: 0px solid #6d7682;
+    background-color: #eeeeee;
+    font-size: 16px;
+    padding: 0px 16px;
+    margin: 24px 0px 0px 0px;
+    transition: all 0.5s;
+}
+.spisok3 select:hover{
+   transform: scale(1.025);
+    
+}
+.adapt h4{
+
+    text-align: center;
+    padding-top: 60px;
+    color: #263244;
+    font-size: 22px;
+    font-weight: bold;
+
+    
+}
+.spisok3 select{
+        height: 56px;
+    width: 100%;
+    text-align: left;
+    border: 0px solid #6d7682;
+    background-color: #eeeeee;
+    font-size: 16px;
+    padding: 0px 16px;
+    margin: 24px 0px 0px 0px;
+    transition: all 0.5s;
+}
+.spisok1 select:hover{
+   transform: scale(1.025);
+    
+}
+.line2{
+    margin-top: 36px;
+    border-bottom: 3px solid #d1d1d1;
+}
+.srok{
+
+    padding-top: 10px;
+    line-height: 42px;
+    font-weight: bold;
+
+    font-size: 18px;
+    margin-bottom: 20px;
+
+}
+
+.fon4{
+    width: 100%;
+    background: url(../img/stata.jpg) center no-repeat;
+    margin-top: 150px;
+    background-attachment: fixed;
+}
+.opisanie4 h3{
+       text-align: center;
+      color: #263244;
+    padding-top: 105px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.statist{
+    margin-top: 90px;
+    width: 100%;
+    float: left;
+
+} 
+.smile{
+    text-align: center;
+    float: left;
+    margin-bottom: 104px;
+}
+.smile p{
+        margin-top: 34px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #323e4f;
+
+}
+.smile span{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    
+
+}
+.smile img{
+
+}
+.hwork{
+    text-align: center;
+    float: left;
+    margin-bottom: 104px;
+}
+.hwork p{
+        margin-top: 34px;
+   font-size: 26px;
+    font-weight: bold;
+    color: #323e4f;
+
+}
+.hwork span{
+     text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+.hwork img{
+
+}
+.proje{
+    text-align: center;
+    float: left;
+    margin-bottom: 104px;
+}
+.proje p{
+        margin-top: 34px;
+  font-size: 26px;
+    font-weight: bold;
+    color: #323e4f; 
+
+}
+.proje span{
+     text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+.proje img{
+
+}
+.medals{
+    text-align: center;
+    float: left;
+    margin-bottom: 104px;
+}
+.medals p{
+    margin-top: 34px;
+     font-size: 26px;
+    font-weight: bold;
+    color: #323e4f;
 
 
 
+}
+.medals span{
+     text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+.medals img{
 
 
+}
+
+.fon5{
+    float: left;
+    background-color: #fff;
+    width: 100%;
+}
+.opisanie5 h3{
+      text-align: center;
+      color: #263244;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 105px;
+}
+.dovolen img{
+    border: 0px solid #000;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    padding: 0%;
+    box-sizing: border-box;  
+    margin: 60px 0px 22px 0px;
+}
+.opisanie5 p{
+    text-align: center;
+    color: #243042;
+}
+
+.fon6{
+    margin-top: 112px;
+    float: left;
+    width: 100%;
+    background: url(../img/Kintuktbi2.jpg)center/cover no-repeat;
+}
+.opisanie6{
+    color: #fff;
+}
+.opisanie6 h3{
+    margin-top: 105px;
+    text-align: center;
+      color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+.slova{
+    text-align: center;
+    margin-bottom: 36px;
+    margin-top: 30px;
+
+}
+.po4ta{
+    text-align: center;
+
+}
+.po4ta img{
+    margin-bottom: 10px;
+}
+
+.geo{
+   text-align: center;
+
+}
+.geo img{
+    margin-bottom: 10px;
+}
+
+.tel{
+    text-align: center;
+
+}
+.tel img{
+    margin-bottom: 10px;
+}
+.ostav{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 36px;
+    margin-bottom: 34px;
+
+}
+.imya input{
+      height: 34px;
+    text-align: left;
+    border: 0px solid none;
+    background-color: #d3d6dc;
+    font-size: 16px;
+    padding: 0px 0px 0px 12px;
+    opacity: 0.7;
+    transition: all 0.2s;
+        margin-bottom: 15px;
+}
+.imya input:hover{
+    transform: scale(1.05);
+}
+.mailru input{
+    float: left;
+      height: 34px;
+    text-align: left;
+    border: 0px solid none;
+    background-color: #d3d6dc;
+    font-size: 16px;
+    padding: 0px 0px 0px 12px;
+    opacity: 0.7;
+    transition: all 0.2s;
+        margin-bottom: 15px;
+}
+.mailru input:hover{
+    transform: scale(1.05);
+}
+.blok textarea{
+    height: 95px;
+    text-align: left;
+    border: 0px solid none;
+    background-color: #d3d6dc;
+    font-size: 16px;
+    padding: 10px 0px 0px 12px;
+    opacity: 0.7;
+    transition: all 0.2s;
+    
+}
+.blok textarea:hover{
+    transform: scale(1.05);
+}
+.otpravit input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    background: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 0px 16px;
+    margin-top: 25px;
+}
+.otpravit input{
+    transition: all 0.2s;
+}
+.otpravit input:hover{
+    background-color:  none;
+    color: white;
+    transform: scale(1.2);
+}
+.otpravit input:active{
+    transform: scale(1.4);
+}
+.seti{
+    margin-top: 80px;
+    word-spacing: 52px;
+    margin-bottom: 66px;
+}
+.fb{
+
+}
+footer a{
+    display: inline-block;
+    transition: all 0.2s;
+}
+footer a:hover{
+    transform: scale(1.6);
+}
+footer a:active{
+    transform: scale(1.8);
+}
+
+.karta{
+
+}
+
+.fon7{
+      width: 100%;
+    height: 96px;
+     background: #344051; 
+   
+}
+.fon7 p{
+    text-align: center;
+    color: #fff;
+    line-height: 96px;
 
 
 
