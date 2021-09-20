@@ -445,7 +445,7 @@ margin-top: 100px;
 }
 
 .boxcalc{
-    margin-top: 40px;
+    margin-top: 166px;
     padding-bottom: 40px;
     box-shadow: 0px 0px 10px #ced1d8;
 }
@@ -741,6 +741,7 @@ margin-top: 100px;
 }
 .imya input{
       height: 34px;
+    width: 100%;
     text-align: left;
     border: 0px solid none;
     background-color: #d3d6dc;
@@ -756,6 +757,7 @@ margin-top: 100px;
 .mailru input{
     float: left;
       height: 34px;
+    width: 100%;
     text-align: left;
     border: 0px solid none;
     background-color: #d3d6dc;
@@ -770,6 +772,7 @@ margin-top: 100px;
 }
 .blok textarea{
     height: 95px;
+    width: 100%;
     text-align: left;
     border: 0px solid none;
     background-color: #d3d6dc;
