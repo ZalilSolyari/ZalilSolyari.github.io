@@ -396,7 +396,14 @@ margin-top: 100px;
 }
 .podval_slidera{
     float: left;
+    padding-right: 0;
 
+}
+.proekt{
+    padding-right: 0;
+}
+.compsite{
+    padding-right: 0;
 }
 .podval_slidera h3{
     font-size: 18px;
@@ -404,6 +411,7 @@ margin-top: 100px;
     font-weight: bold;
 }
 .podval_slidera p{
+    text-align: justify;
     font-size: 16px;
     color: #3f495a;
     
@@ -443,9 +451,19 @@ margin-top: 100px;
 .opisanie3 input:active{
     transform: scale(1.4);
 }
-
+@media (min-width:1px) and (max-width: 767px){
+    .compsite{
+        text-align:center;
+    } 
+    .compsite p{
+        text-align: center;
+    }
+    .proekt h3{
+       text-align: center; 
+    }
+}
 .boxcalc{
-    margin-top: 166px;
+    margin-top: 152px;
     padding-bottom: 40px;
     box-shadow: 0px 0px 10px #ced1d8;
 }
@@ -550,6 +568,9 @@ margin-top: 100px;
     font-size: 18px;
     margin-bottom: 20px;
 
+}
+.podval_slidera input{
+    margin-bottom: 14px;
 }
 
 .fon4{
@@ -809,7 +830,6 @@ margin-top: 100px;
 }
 .seti{
     margin-top: 80px;
-    word-spacing: 52px;
     margin-bottom: 66px;
 }
 
