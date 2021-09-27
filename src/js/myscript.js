@@ -14,53 +14,53 @@ let srok;
 let num1 = tip;
 
 if(num1 === "1"){
- let num1 = 1000;   
+  num1 = 1000;   
 
 console.log(num1);
 }
 else if(num1 === "2"){
-    let num1 = 2000;
+     num1 = 2000;
     console.log(num1);
 }
 else if(num1 === "3"){
-    let num1 = 3000;
+     num1 = 3000;
     console.log(num1);
 }
 let num2 = des;
 
 
 if(num2 === "1"){
- let num2 = 1000;   
+  num2 = 1000;   
 
 console.log(num2);
 }
 else if(num2 === "2"){
-    let num2 = 2000;
+     num2 = 2000;
     console.log(num2);
 }
 else if(num2 === "3"){
-    let num2 = 3000;
+     num2 = 3000;
     console.log(num2);
 }
 let num3 = adapt;
 
     if(num3 === "1"){
- let num3 = 1000;   
+  num3 = 1000;   
 
 console.log(num3);
 }
 else if(num3 === "2"){
-    let num3 = 2000;
+     num3 = 2000;
     console.log(num3);
 }
 else if(num3 === "3"){
-    let num3 = 3000;
+     num3 = 3000;
     console.log(num3);
 }
     
-itog = +num1 + +num2 + +num3+"000 драхм";
+itog = +num1 + +num2 + +num3+" драхм";
 console.log(itog);
     confirm(itog);
-srok = +num1 + +num2 + +num3+" Дн.";
+srok = +tip + +des + +adapt+" Дн.";
 console.log(srok);
     confirm(srok);
