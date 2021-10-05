@@ -17,15 +17,32 @@ nav{
     position: fixed;
     z-index: 10;
 }
-.logo{
+
+.logo a{
+    display: inline-block;
+    text-decoration: none;
     color: #fff;
     font-size: 28px;
     line-height: 60px;
+        transform: scale(1);
+        transition: all 0.2s;
     float: left;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
     animation: comming 2s ease;
     font-family: 'FranklinGothic';
+    
+}
+.logo a:visited{
+    color: white;
+}
+
+.logo a:hover{
+    color: #ff9407;
+    transform: scale(1.07);
+}
+.logo a:active{
+    transform: scale(1.15);
 }
 @keyframes comming{
     from{
@@ -39,6 +56,9 @@ nav{
     float: left;
 
     
+}
+.orange{
+    color: orange;
 }
 .menu li a{
     transition: all 0.2s;
@@ -56,6 +76,7 @@ nav{
 }
 .menu li a:active{
     transform: scale(1.5);
+
 }
 
 .menu li{
@@ -97,6 +118,7 @@ nav{
         margin-top: 0px;
     }
 }
+
 .main{
     width: 100%;
     height: 100%;
@@ -161,11 +183,12 @@ color: #2c384a;
         margin-left: 0px;
     }
 }
+
 .white-btn:visited{
     color: white;
 }
 @media (max-width: 512px){
-    .logo{
+    .logo a{
         font-size: 22px;
     }
     .title__container h1{
@@ -177,13 +200,13 @@ color: #2c384a;
 }
 
 @media (min-width: 376px) and (max-width: 410px){
-    .logo{
+    .logo a{
         font-size: 20px;
     }
 }
 
 @media (min-width: 100px) and (max-width: 376px){
-    .logo{
+    .logo a{
         font-size: 16px;
     }
 }
@@ -229,12 +252,9 @@ color: #2c384a;
 .fon1{
 
     width: 100%;
-    color: #fcfdfd;
-
-
-    
-    
+    color: #fcfdfd;   
 }
+
 .ava img{
     border: 0px solid #000;
     border-radius: 100%;
@@ -242,7 +262,29 @@ color: #2c384a;
     height: 200px;
     box-sizing: border-box; 
      margin: 60px 0px 30px 0px;
+              opacity: 0;
+    -webkit-animation: titlemoveimg 0.6s ease forwards;
+    -o-animation: titlemoveimg 0.6s ease forwards;
+    animation: titlemoveimg 0.6s ease forwards;
+    -webkit-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s; 
+    
 }
+
+
+    @keyframes titlemoveimg{
+    from{
+        opacity: 0;
+        margin-right: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+ 
+
 .opisanie1 h3{
     margin-top: 110px;
     color: #263244;
@@ -256,11 +298,19 @@ color: #2c384a;
     text-align: justify;
     font-size: 16px;
     color: #3f495a;
+        opacity: 0;
+    -webkit-animation: titlemove 0.6s ease forwards;
+    -o-animation: titlemove 0.6s ease forwards;
+    animation: titlemove 0.6s ease forwards;
+    -webkit-animation-delay: 1.3s;
+    -o-animation-delay: 1.3s;
+    animation-delay: 1.3s;
 }
 .otstup{
     margin-top: 42px;;
 }
 .opisanie1 input{
+
     margin-bottom: 100px;
     margin-top: 36px;
       height: 40px;
@@ -272,7 +322,25 @@ color: #2c384a;
     background-size: 18px;
     color: #6f707e;
     font-size: 16px;
+opacity: 0;
     padding: 10px 10px 10px 34px;
+    
+        -webkit-animation: titlemoveinput 0.6s ease forwards;
+    -o-animation: titlemoveinput 0.6s ease forwards;
+    animation: titlemoveinput 0.6s ease forwards;
+    -webkit-animation-delay: 1.3s;
+    -o-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+@keyframes titlemoveinput{
+    from{
+        opacity: 0;
+        margin-right: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-right: 0px;
+    }
 }
 .opisanie1 input{
     transition: all 0.2s;
@@ -305,7 +373,26 @@ margin-top: 100px;
 .nout{
     text-align: center;
     float: left;
+    opacity: 0;
+            -webkit-animation: noutcome 0.6s ease forwards;
+    -o-animation: noutcome 0.6s ease forwards;
+    animation: noutcome 0.6s ease forwards;
+    -webkit-animation-delay: 1.3s;
+    -o-animation-delay: 1.3s;
+    animation-delay: 1.3s;
 }
+
+@keyframes noutcome{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
 .nout h4{
     color: #cf7600;
     font-weight: bold;
@@ -321,7 +408,26 @@ margin-top: 100px;
 .levopravo{
     text-align: center;
     float: left;
+    opacity: 0;
+                -webkit-animation: levopravocome 0.6s ease forwards;
+    -o-animation: levopravocome 0.6s ease forwards;
+    animation: levopravocome 0.6s ease forwards;
+    -webkit-animation-delay: 1.6s;
+    -o-animation-delay: 1.6s;
+    animation-delay: 1.6s;
 }
+
+@keyframes levopravocome{
+    from{
+        opacity: 0;
+        margin-bottom: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-bottom: 0px;
+    }
+}
+
 .levopravo h4{
     color: #cf7600;
     font-weight: bold;
@@ -337,8 +443,27 @@ margin-top: 100px;
 .raketa{
     text-align: center;
     float: left;
+        opacity: 0;
+                -webkit-animation: raketacome 0.6s ease forwards;
+    -o-animation: raketacome 0.6s ease forwards;
+    animation: raketacome 0.6s ease forwards;
+    -webkit-animation-delay: 1.6s;
+    -o-animation-delay: 1.6s;
+    animation-delay: 1.6s;
   
 }
+
+@keyframes raketacome{
+    from{
+        opacity: 0;
+        margin-bottom: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-bottom: 0px;
+    }
+}
+
 .raketa h4{
     color: #cf7600;
     font-weight: bold;
@@ -354,7 +479,26 @@ margin-top: 100px;
 .megafon{
     text-align: center;
     float: left;
+            opacity: 0;
+                -webkit-animation: megafoncome 0.6s ease forwards;
+    -o-animation: megafoncome 0.6s ease forwards;
+    animation: megafoncome 0.6s ease forwards;
+    -webkit-animation-delay: 1.3s;
+    -o-animation-delay: 1.3s;
+    animation-delay: 1.3s;
 }
+
+@keyframes megafoncome{
+    from{
+        opacity: 0;
+        margin-right: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+
 .megafon h4{ 
     color: #cf7600;
     font-weight: bold;
@@ -389,11 +533,22 @@ margin-top: 100px;
     text-align: center;
     margin-bottom: 34px;
 }
+.element-animation{
+    opacity: 0;
+}
+.element-animation.show-animation{
+    opacity: 1;
+    transition: 1s;
+}
 .slider{
     float: left;
     box-shadow: 0px 0px 0px;
     margin-bottom: 42px;
+
 }
+
+
+
 .podval_slidera{
     float: left;
     padding-right: 0;
@@ -593,6 +748,13 @@ margin-top: 100px;
     float: left;
 
 } 
+.statist{
+    opacity: 0;
+}
+.vid{
+    opacity: 1;
+    transition: 1s;
+}
 .smile{
     text-align: center;
     float: left;
@@ -625,6 +787,7 @@ margin-top: 100px;
    font-size: 26px;
     font-weight: bold;
     color: #323e4f;
+    
 
 }
 .hwork span{
@@ -703,6 +866,7 @@ margin-top: 100px;
     box-sizing: border-box;  
     margin: 60px 0px 22px 0px;
 }
+.carousel-item img
 .opisanie5 p{
     text-align: center;
     color: #243042;
@@ -855,12 +1019,18 @@ footer a:active{
      background: #344051; 
    
 }
+
 .fon7 p{
     text-align: center;
     color: #fff;
     line-height: 96px;
+}
+.knopka1{
 
-
-
-
+    height: 20px;
+    color: #dc3545;
+}
+.knopka2{
+    color: #0d6efd;
+height: 20px;
 
