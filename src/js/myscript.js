@@ -1,14 +1,14 @@
 
 
 function calculated(){
-let tip = document.querySelector('#spisok1.1').value;
+let tip = document.querySelector('#spisok11').value;
     console.log(tip);
 
-let des = document.querySelector('#spisok1.2').value;
+let des = document.querySelector('#spisok12').value;
 
 console.log(des);
 
-let adapt = document.querySelector('#spisok1.3').value;
+let adapt = document.querySelector('#spisok13').value;
 
 console.log(adapt);
 
@@ -17,7 +17,7 @@ let srok;
 
 let num1 = tip;
 
-if(num1 === "opt2"){
+if(num1 === "opt1"){
   num1 = 1000;   
 
 console.log(num1);
@@ -67,7 +67,8 @@ console.log(itog);
    
 srok = +tip + +des + +adapt+" Дн.";
 console.log(srok);
-  
+  document.getElementById('zeroone').value = itog;
+    document.getElementById('zerotwo').value = srok;
     }
     
 
@@ -85,11 +86,11 @@ console.log(srok);
           
             if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
                 $("nav a").each((i, el) => {
-                   if($(el).hasClass("active")){
-                       $(el).removeClass("active");
+                   if($(el).hasClass("actbar")){
+                       $(el).removeClass("actbar");
                    } 
                 });
-                $('nav li:eq('+ i +')').find('a').addClass('active');
+                $('nav li:eq('+ i +')').find('a').addClass('actbar');
             };
             
         });
@@ -155,7 +156,7 @@ $(window).scroll(function(){
 
    let options = {threshold: [1]};
     let observer = new IntersectionObserver(onEntry, options);
-    let elements = $('.element-animation1');
+    let elements = $('.element-animation');
     elements.each((i, el) => {
        observer.observe(el);
     });
@@ -163,7 +164,8 @@ $(window).scroll(function(){
     function onEntry (entry){
         entry.forEach(change =>{
             if(change.isIntersecting){
-                change.target.classList.add('show-animation1');
+                change.target.classList.add('show-animation');
+               
             }
         }) ;
     }
@@ -171,9 +173,9 @@ $(window).scroll(function(){
     
     
       let options1 = {threshold: [0.5]};
-    let observer1= new IntersectionObserver(onEntry, options1);
+    let observer1= new IntersectionObserver(onEntry1, options1);
     let elements1 = $('.imgview');
-    elements.each((i, el) => {
+    elements1.each((i, el) => {
        observer1.observe(el);
     });
     

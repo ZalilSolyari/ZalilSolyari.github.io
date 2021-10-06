@@ -27,7 +27,7 @@
     <nav>
        <div class="container">
            <div class="row">
-               <div class="col-xxl-3 col-lg-4 col-7"><div class="logo"><a href="#nachalo">Николай Феофилактов</a></div></div>
+               <div class="col-xxl-3 col-lg-4 col-7  align-items-center"><div class="logo"><a href="#nachalo">Николай Феофилактов</a>   </div></div>
                <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-3 offset-xl-1 offset-lg-0 d-none d-lg-block"><div class="menu"> <ul>
             <li><a href="#obomne">Обо мне</a></li>
             <li><a href="#uslugi">Услуги</a></li>
@@ -102,10 +102,10 @@
             <div class="col d-flex justify-content-center"><div class="line"><img src="img/h3line.png" alt="1"> </div></div>
              <div class="vse">
            <div class="col d-flex justify-content-around align-items-end flex-wrap"> 
-            <div class="nout col-12 col-lg-3">
+            <div class="nout col-12 col-lg-3 element-animation">
        <img src="./img/nout.png" alt="Изображение">
        
-       <h4>Веб-дизайн</h4> 
+       <h4 >Веб-дизайн</h4> 
        <p>Lorem ipsum dolor sit amet, <br> consectetur adipisicing <br> elit.
         Molestiae, minus?</p>
         </div>
@@ -151,19 +151,19 @@
        <div class="zagolovok"><h3>КЕЙСЫ</h3></div>
       <div class="col d-flex justify-content-center"><div class="line"><img src="img/h3line.png" alt="1"></div></div>
       <div class="podzagolovok">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nisi excepturi numquam. Doloremque, ipsa voluptatibus.</p>
+      <p class="element-animation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nisi excepturi numquam. Doloremque, ipsa voluptatibus.</p>
        </div>
        <div class="slider">
            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="2000">
-      <img src="./img/wzymuie_6a5f.jpg" href="img/wzymuie_6a5f.jpg" class="d-block w-100 image-link" alt="...">
+      <img  src="./img/wzymuie_6a5f-bad.jpg" data-src="./img/wzymuie_6a5f.jpg" href="img/wzymuie_6a5f.jpg" class="d-block w-100 image-link imgview" alt="...">
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="./img/thumb-1920-695463.jpg" href="img/thumb-1920-695463.jpg" data-src="/" class="d-block w-100 image-link" alt="...">
+      <img  src="./img/thumb-1920-695463-bad.png" href="img/thumb-1920-695463.jpg" data-src="./img/thumb-1920-695463.jpg" class="d-block w-100 image-link imgview" alt="...">
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="./img/vodopad_izmereniy.jpg" href="img/vodopad_izmereniy.jpg" class="d-block w-100 image-link" alt="...">
+      <img  src="./img/vodopad_izmereniy-bad.jpg" href="img/vodopad_izmereniy.jpg" data-src="./img/vodopad_izmereniy.jpg" class="d-block w-100 image-link imgview" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
@@ -209,7 +209,7 @@
        <div class="tip">
       <div class="col"> <h4>ТИП САЙТА</h4>
        <form action="№">
-          <div class="spisok1" id="spisok1.1">
+          <div class="spisok1" id="spisok11">
           <select name="list1">
         <option value="opt1">Выберите пункт</option>
            <option value="opt2">Крутой</option>
@@ -220,7 +220,7 @@
        <div class="des">
         <h4>ДИЗАЙН</h4>
            </div>
-           <div class="spisok2" id="spisok1.2">
+           <div class="spisok2" id="spisok12">
     <select name="list1"> 
         <option value="opt1">Выберите пункт</option>
            <option value="opt2">Гуррен Лаганн</option>
@@ -231,7 +231,7 @@
            <div class="adapt">
            <h4>АДАПТИВНОСТЬ</h4>
            </div>
-           <div class="spisok3" id="spisok1.3">
+           <div class="spisok3" id="spisok13">
             <select name="list1">
         <option value="opt1">Выберите пункт</option>
            <option value="opt2">Импровизируй</option>
@@ -245,8 +245,8 @@
            <div class="line2"></div>
            </div>
        <div class="srok">
-           <div class="col d-flex justify-content-between">Сроки<big>0</big></div>
-           <div class="col d-flex justify-content-between">Стоимость<big>0</big></div>
+           <div class="col d-flex justify-content-between">Сроки<big id="zeroone">0</big></div>
+           <div class="col d-flex justify-content-between">Стоимость<big id="zerotwo">0</big></div>
       </div>
       
      <div class="col d-flex justify-content-center"><input type="submit" value="Оставить заявку"></div>
