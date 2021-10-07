@@ -1,8 +1,15 @@
+$(document).ready(function(){
+    
+    
 
 
 function calculated(){
-let tip = document.querySelector('#spisok11').value;
-    console.log(tip);
+let tip = document.getElementById("#spisok11").value;
+      console.log(tip);
+
+    
+    
+    
 
 let des = document.querySelector('#spisok12').value;
 
@@ -17,16 +24,16 @@ let srok;
 
 let num1 = tip;
 
-if(num1 === "opt1"){
+if(num1 === "Крутой"){
   num1 = 1000;   
 
 console.log(num1);
 }
-else if(num1 === "opt3"){
+else if(num1 === "Очень Крутой"){
      num1 = 2000;
     console.log(num1);
 }
-else if(num1 === "opt4"){
+else if(num1 === "Улётный"){
      num1 = 3000;
     console.log(num1);
 }
@@ -67,8 +74,8 @@ console.log(itog);
    
 srok = +tip + +des + +adapt+" Дн.";
 console.log(srok);
-  document.getElementById('zeroone').value = itog;
-    document.getElementById('zerotwo').value = srok;
+  document.getElementById('zeroone') = itog;
+    document.getElementById('zerotwo') = srok;
     }
     
 
@@ -164,7 +171,8 @@ $(window).scroll(function(){
     function onEntry (entry){
         entry.forEach(change =>{
             if(change.isIntersecting){
-                change.target.classList.add('show-animation');
+                change.target.classList.add('show-animation', "show-animation1");
+                
                
             }
         }) ;
@@ -190,18 +198,31 @@ $(window).scroll(function(){
     
     
     
+   /* $(window).scroll(function(){
+    $('.statist').each(function(){
+        let
+        cPos = $(this).offset().top,
+            topWindow = $(window).scrollTop();
+        if (cPos < topWindow + 600){*/
     
-    
+
+
+
+$('.rev-slider').slick({
+    arrows: false,
+    dots: true,
+    autoplay: true,
+  autoplaySpeed: 4000,
+    speed: 2000,
+});
+        
 
 
 
 
 
 
-
-
-
-
+})
 
 
 

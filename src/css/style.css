@@ -33,6 +33,12 @@ nav{
     font-family: 'FranklinGothic';
     
 }
+.logo li{
+    height: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
 .logo a:visited{
     color: white;
 }
@@ -119,8 +125,8 @@ nav{
     }
 }
 .actbar{
-    color: #ff9407;
-    transform: scale(1.3);
+    color: #ff9407 !important;
+    transform: scale(1.3) !important;
 }
 
 .main{
@@ -266,16 +272,22 @@ color: #2c384a;
     height: 200px;
     box-sizing: border-box; 
      margin: 60px 0px 30px 0px;
-              opacity: 0;
-    -webkit-animation: titlemoveimg 0.6s ease forwards;
-    -o-animation: titlemoveimg 0.6s ease forwards;
-    animation: titlemoveimg 0.6s ease forwards;
-    -webkit-animation-delay: 0.7s;
-    -o-animation-delay: 0.7s;
-    animation-delay: 0.7s; 
+           
+
     
 }
+.element-animation{
+    opacity: 0;
+}
+.element-animation.show-animation{
+        -webkit-animation: titlemoveimg 0.6s ease forwards;
+    -o-animation: titlemoveimg 0.6s ease forwards;
+    animation: titlemoveimg 0.6s ease forwards;
+        -webkit-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
 
+}
 
     @keyframes titlemoveimg{
     from{
@@ -287,7 +299,7 @@ color: #2c384a;
         margin-right: 0px;
     }
 }
- 
+
 
 .opisanie1 h3{
     margin-top: 110px;
@@ -302,13 +314,16 @@ color: #2c384a;
     text-align: justify;
     font-size: 16px;
     color: #3f495a;
-        opacity: 0;
-    -webkit-animation: titlemove 0.6s ease forwards;
+
+}
+
+.element-animation.show-animation1{
+        -webkit-animation: titlemove 0.6s ease forwards;
     -o-animation: titlemove 0.6s ease forwards;
     animation: titlemove 0.6s ease forwards;
-    -webkit-animation-delay: 1.3s;
-    -o-animation-delay: 1.3s;
-    animation-delay: 1.3s;
+    -webkit-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    animation-delay: 8s;
 }
 .otstup{
     margin-top: 42px;;
@@ -378,22 +393,19 @@ margin-top: 100px;
 .nout{
     text-align: center;
     float: left;
-   
-}
-
-.element-animation{
-        opacity: 0;
-
-
-}
-.element-animation.show-animation{
-                 -webkit-animation: noutcome 0.6s ease forwards;
+    opacity: 0;
+                    -webkit-animation: noutcome 0.6s ease forwards;
     -o-animation: noutcome 0.6s ease forwards;
     animation: noutcome 0.6s ease forwards;
-    -webkit-animation-delay: 0.7s;
-    -o-animation-delay: 0.7s;
-    animation-delay: 0.7s;
+    -webkit-animation-delay: 1.3s;
+    -o-animation-delay: 1.3s;
+    animation-delay: 1.3s;
 }
+
+
+
+
+
     @keyframes noutcome{
     from{
         opacity: 0;
@@ -863,9 +875,10 @@ margin-top: 100px;
     font-weight: bold;
     padding-top: 105px;
 }
-.dovolen img{
+
+.dovolen-slider img{
     border: 0px solid #000;
-    border-radius: 100%;
+    border-radius: 50%;
     width: 150px;
     height: 150px;
     padding: 0%;
@@ -873,6 +886,10 @@ margin-top: 100px;
     margin: 60px 0px 22px 0px;
 }
 
+.slick-dots li button:before{
+  color: orangered!important;
+    font-size: 10px !important;
+}
 .opisanie5 p{
     text-align: center;
     color: #243042;
