@@ -186,11 +186,11 @@ color: #2c384a;
 @keyframes titlemove{
     from{
         opacity: 0;
-        margin-left: -500px;
+        transform: translate(-500px, 0px);
     }
     to{
         opacity: 1;
-        margin-left: 0px;
+        transform: translate(0px, 0px);
     }
 }
 
@@ -272,31 +272,30 @@ color: #2c384a;
     height: 200px;
     box-sizing: border-box; 
      margin: 60px 0px 30px 0px;
-           
+    
+ 
 
     
 }
-.element-animation{
+
+.ava._animactive{
     opacity: 0;
-}
-.element-animation.show-animation{
-        -webkit-animation: titlemoveimg 0.6s ease forwards;
+    -webkit-animation: titlemoveimg 0.6s ease forwards;
     -o-animation: titlemoveimg 0.6s ease forwards;
     animation: titlemoveimg 0.6s ease forwards;
-        -webkit-animation-delay: 0.7s;
-    -o-animation-delay: 0.7s;
-    animation-delay: 0.7s;
-
+        -webkit-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;   
 }
 
     @keyframes titlemoveimg{
     from{
         opacity: 0;
-        margin-right: -500px;
+        transform: translate(500px, 0px);
     }
     to{
         opacity: 1;
-        margin-right: 0px;
+        transform: translate(0px, 0px);
     }
 }
 
@@ -316,15 +315,25 @@ color: #2c384a;
     color: #3f495a;
 
 }
-
-.element-animation.show-animation1{
+.obomnetext._animactive{
+opacity: 0;
         -webkit-animation: titlemove 0.6s ease forwards;
     -o-animation: titlemove 0.6s ease forwards;
     animation: titlemove 0.6s ease forwards;
-    -webkit-animation-delay: 8s;
-    -o-animation-delay: 8s;
-    animation-delay: 8s;
+    -webkit-animation-delay: 0.9s;
+    -o-animation-delay: 0.9s;
+    animation-delay: 0.9s;
 }
+.obomnetext2._animactive{
+        opacity: 0;
+                   -webkit-animation: titlemoveimg 0.6s ease forwards;
+    -o-animation: titlemoveimg 0.6s ease forwards;
+    animation: titlemoveimg 0.6s ease forwards;
+        -webkit-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
 .otstup{
     margin-top: 42px;;
 }
@@ -341,24 +350,28 @@ color: #2c384a;
     background-size: 18px;
     color: #6f707e;
     font-size: 16px;
-opacity: 0;
     padding: 10px 10px 10px 34px;
     
-        -webkit-animation: titlemoveinput 0.6s ease forwards;
+
+}
+
+.obomneinput._animactive{
+    opacity: 0;
+            -webkit-animation: titlemoveinput 0.6s ease forwards;
     -o-animation: titlemoveinput 0.6s ease forwards;
     animation: titlemoveinput 0.6s ease forwards;
-    -webkit-animation-delay: 1.3s;
-    -o-animation-delay: 1.3s;
-    animation-delay: 1.3s;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
 }
 @keyframes titlemoveinput{
     from{
         opacity: 0;
-        margin-right: -500px;
+        transform: translate(0px, 200%);
     }
     to{
+        transform: translate(0px, 0px);
         opacity: 1;
-        margin-right: 0px;
     }
 }
 .opisanie1 input{
@@ -388,20 +401,27 @@ opacity: 0;
 
 .vse{
 margin-top: 100px;
+    opacity: 0;
+}
+.vse._animactive{
+    opacity: 1;
+    transition: 0.001s;
 }
 
 .nout{
     text-align: center;
     float: left;
-    opacity: 0;
+
+}
+.nout._animactive{
+        opacity: 0;
                     -webkit-animation: noutcome 0.6s ease forwards;
     -o-animation: noutcome 0.6s ease forwards;
     animation: noutcome 0.6s ease forwards;
-    -webkit-animation-delay: 1.3s;
-    -o-animation-delay: 1.3s;
-    animation-delay: 1.3s;
+    -webkit-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
-
 
 
 
@@ -409,11 +429,11 @@ margin-top: 100px;
     @keyframes noutcome{
     from{
         opacity: 0;
-        margin-left: -500px;
+        transform: translate(-90%, 0px);
     }
     to{
         opacity: 1;
-        margin-left: 0px;
+        transform: translate(0px, 0px);
     }
 }
 
@@ -432,23 +452,26 @@ margin-top: 100px;
 .levopravo{
     text-align: center;
     float: left;
-    opacity: 0;
-                -webkit-animation: levopravocome 0.6s ease forwards;
-    -o-animation: levopravocome 0.6s ease forwards;
-    animation: levopravocome 0.6s ease forwards;
-    -webkit-animation-delay: 1.6s;
-    -o-animation-delay: 1.6s;
-    animation-delay: 1.6s;
+
 }
 
+.levopravo._animactive{
+        opacity: 0;
+    -webkit-animation: levopravocome 0.6s ease forwards;
+    -o-animation: levopravocome 0.6s ease forwards;
+    animation: levopravocome 0.6s ease forwards;
+    -webkit-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
 @keyframes levopravocome{
     from{
         opacity: 0;
-        margin-bottom: -500px;
+        transform: translate(0px, 90%);
     }
     to{
         opacity: 1;
-        margin-bottom: 0px;
+        transform: translate(0px, 0px);
     }
 }
 
@@ -467,24 +490,28 @@ margin-top: 100px;
 .raketa{
     text-align: center;
     float: left;
-        opacity: 0;
+
+  
+}
+
+.raketa._animactive{
+            opacity: 0;
                 -webkit-animation: raketacome 0.6s ease forwards;
     -o-animation: raketacome 0.6s ease forwards;
     animation: raketacome 0.6s ease forwards;
-    -webkit-animation-delay: 1.6s;
-    -o-animation-delay: 1.6s;
-    animation-delay: 1.6s;
-  
+    -webkit-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
 }
 
 @keyframes raketacome{
     from{
         opacity: 0;
-        margin-bottom: -500px;
+        transform: translate(0px, -90%);
     }
     to{
         opacity: 1;
-        margin-bottom: 0px;
+        transform: translate(0px, 0px);
     }
 }
 
@@ -503,23 +530,27 @@ margin-top: 100px;
 .megafon{
     text-align: center;
     float: left;
-            opacity: 0;
+
+}
+
+.megafon._animactive{
+                opacity: 0;
                 -webkit-animation: megafoncome 0.6s ease forwards;
     -o-animation: megafoncome 0.6s ease forwards;
     animation: megafoncome 0.6s ease forwards;
-    -webkit-animation-delay: 1.3s;
-    -o-animation-delay: 1.3s;
-    animation-delay: 1.3s;
+    -webkit-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 @keyframes megafoncome{
     from{
         opacity: 0;
-        margin-right: -500px;
+        transform: translate(90%, 0px);
     }
     to{
         opacity: 1;
-        margin-right: 0px;
+        transform: translate(0px, 0px);
     }
 }
 
@@ -564,12 +595,13 @@ margin-top: 100px;
     margin-bottom: 42px;
 
 }
-
-
-
+.slick-arrow::before{
+    color: orangered!important;
+}
 .podval_slidera{
     float: left;
-    padding-right: 0;
+    padding-right: 10px;
+    margin-top: 15px;
 
 }
 .proekt{
@@ -620,6 +652,7 @@ margin-top: 100px;
     background-color:  aqua;
     color: #2a3c56;
     transform: scale(1.2);
+    
 }
 .opisanie3 input:active{
     transform: scale(1.4);
@@ -1019,8 +1052,27 @@ margin-top: 100px;
 .seti{
     margin-top: 80px;
     margin-bottom: 66px;
-}
 
+}
+.seti._animactive{
+                opacity: 0;
+                -webkit-animation: seti 0.6s ease forwards;
+    -o-animation: seti 0.6s ease forwards;
+    animation: seti 0.6s ease forwards;
+    -webkit-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+@keyframes seti{
+        from{
+        opacity: 0;
+        transform: translate(0px, 200%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
 footer a{
     display: inline-block;
     transition: all 0.2s;

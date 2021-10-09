@@ -1,39 +1,126 @@
+     function calculated(select){
+         
+let select1 = document.getElementById("spisok11");
+          let tip = select1.value;
+
+
+
+      
+let select2 = document.getElementById("spisok12");
+          let des = select2.value;
+      
+let select3 = document.getElementById("spisok13");
+          let adapt = select3.value;
+      
+         let itog;
+         let srok;
+         
+         
+         
+         let num1 = tip;
+         let days1
+              
+         
+if(num1 === "opt2" ){
+  num1 = 1000;
+    days1 = 1;
+
+} 
+else if (num1 === "opt3") {
+num1 = 2000;
+    days1 = 2;
+} 
+else if(num1 === "opt4") {
+num1 = 3000;
+    days1 = 3;
+}
+         console.log(num1);
+         let num2 = des;
+         let days2
+         
+         if(num2 === "opt2" ){
+  num2 = 1000;
+             days2 = 1;
+
+} 
+else if (num2 === "opt3") {
+num2 = 2000;
+    days2 = 2;
+} 
+else if(num2 === "opt4") {
+num2 = 3000;
+    days2 = 3;
+}
+        
+         let num3 = adapt;
+          let days3
+         
+         if(num3 === "opt2" ){
+  num3 = 1000;
+             days3 = 1;
+
+} 
+else if (num3 === "opt3") {
+num3 = 2000;
+    days3 = 2;
+} 
+else if(num3 === "opt4") {
+num3 = 3000;
+    days3 = 3;
+}
+      
+         
+function schet(){
+      itog = +num1 + +num2 + +num3 + " арбузов";
+         
+         document.getElementById("zerotwo").innerHTML = itog;
+        srok = +days1 + +days2 + +days3 +" Дн.";
+         document.getElementById("zeroone").innerHTML = srok;
+    }
+         schet();
+     }
+
+
+
 $(document).ready(function(){
     
     
+  /* function calculated(select){ 
+let tip = select.options[select.selectedIndex];
+      alert(tip.value);
+         
+     
 
 
-function calculated(){
-let tip = document.getElementById("#spisok11").value;
-      console.log(tip);
+
 
     
     
     
 
-let des = document.querySelector('#spisok12').value;
+let des =  select.options[select.selectedIndex];;
 
-console.log(des);
+alert(des.value);
 
-let adapt = document.querySelector('#spisok13').value;
+let adapt =  select.options[select.selectedIndex];
 
-console.log(adapt);
+alert(adapt.value);
 
 let itog;
 let srok;
 
 let num1 = tip;
 
-if(num1 === "Крутой"){
+if(num1 === "opt2"){
   num1 = 1000;   
 
 console.log(num1);
 }
-else if(num1 === "Очень Крутой"){
+else if(num1 === "opt3"){
      num1 = 2000;
     console.log(num1);
 }
-else if(num1 === "Улётный"){
+else if(num1 === "opt4"){
      num1 = 3000;
     console.log(num1);
 }
@@ -76,9 +163,9 @@ srok = +tip + +des + +adapt+" Дн.";
 console.log(srok);
   document.getElementById('zeroone') = itog;
     document.getElementById('zerotwo') = srok;
-    }
     
-
+    
+}*/
 /*$('a[href^="#"]').click(function(){
     let valHref = $(this).attr("href");
     $('html, body').animate({scrollTop: $(valHref).offset().top + "px"});
@@ -161,7 +248,7 @@ $(window).scroll(function(){
 
 
 
-   let options = {threshold: [1]};
+  /* let options = {threshold: [1]};
     let observer = new IntersectionObserver(onEntry, options);
     let elements = $('.element-animation');
     elements.each((i, el) => {
@@ -178,7 +265,7 @@ $(window).scroll(function(){
         }) ;
     }
     
-    
+    */
     
       let options1 = {threshold: [0.5]};
     let observer1= new IntersectionObserver(onEntry1, options1);
@@ -217,10 +304,55 @@ $('.rev-slider').slick({
 });
         
 
+    $('.slider').slick({
+    autoplay: true,
+  autoplaySpeed: 4000,
+    speed: 2000,
+});
 
 
 
-
+const animItems = document.querySelectorAll('._animaciya');
+    
+    if(animItems.length > 0){
+        window.addEventListener('scroll', animOnScroll);
+        function animOnScroll(params){
+            for (let index = 0; index < animItems.length; index++) {
+                const animItem = animItems[index];
+                const animItemHeight = animItem.offsetHeight;
+                const animItemOffset = offset(animItem).top;
+                const animStart = 4;
+                
+                let  animItemPoint = window.innerHeight - animItemHeight / animStart;
+                
+                if(animItemHeight > window.innerHeight){
+                   animItemPoint = window.innerHeight - window.innerHeight / animStart;
+                   }
+                
+                if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
+                    animItem.classList.add('_animactive');
+                } else {
+                    if(!animItem.classList.contains('_anim-no-hide')){
+                    animItem.classList.remove('_animactive');
+                        }
+                }
+                
+        }
+    }
+            function offset(el) {
+                const rect = el.getBoundingClientRect(),
+                      scrollLeft = window.pageXOffset ||
+                      document.documentElement.scrollLeft,
+                      
+                      scrollTop = window.pageYOffset ||
+                      document.documentElement.scrollTop;
+                return { top: rect.top + scrollTop, left: rect.left + scrollLeft}
+                      
+            }
+        }
+    
+    
+    
 
 })
 
